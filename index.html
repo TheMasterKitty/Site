@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="avatar.gif" type="image">
+    <title>TheMasterKitty's Bot Carnival</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+            background: rgb(22,22,22);
+            background: -moz-radial-gradient(circle, rgba(22,22,22,1) 0%, rgba(33,33,33,1) 100%);
+            background: -webkit-radial-gradient(circle, rgba(22,22,22,1) 0%, rgba(33,33,33,1) 100%);
+            background: radial-gradient(circle, rgba(22,22,22,1) 0%, rgba(33,33,33,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#161616",endColorstr="#212121",GradientType=1);
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .content {
+            flex: 1;
+            height: 100vh;
+            position: relative;
+            transition: transform 0.6s;
+        }
+        .sidebar {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+        .button {
+            background-color: white;
+            border: 3px solid white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            margin: 10px;
+            cursor: pointer;
+            transition: 0.8s;
+        }
+        .button:hover {
+            background-color: #d6d6d6;
+            border: 3px solid #d6d6d6;
+        }
+        .active {
+            background-color: #6184b3;
+            border: 3px solid #6184b3;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .title-bar {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .separator {
+            width: 100%;
+            height: 2px;
+            background: #444;
+            margin: 20px 0;
+        }
+        a {
+            color: lightskyblue;
+            text-decoration: underline;
+        }
+        p {
+            font-size: 18px;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 2%;
+        }
+        img {
+            width: 5%;
+            right: 37.5%;
+            position: absolute;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content" id="content">
+            <section id="about">
+                <div class="title-bar">
+                    <h1>TheMasterKitty</h1>
+                    <img src="avatar.gif" alt="My Profile Picture" style="margin-left: 10px;" />
+                </div>
+                <div class="separator"></div>
+                <p>Hey! I'm TheMasterKitty👋! I make Discord Bots as fun projects to share my code to help others! I made this website to tell a little bit about me and to let you see my other bots I made! If you do like them, thanks a lot! On your right are the list of bots I made along with info and links to them!</p>
+            </section>
+            <section id="bot1">
+                <div class="title-bar">
+                    <h1>RNGMAX</h1>
+                    <img src="rngmax.png" alt="RNGMAX's Icon" style="margin-left: 10px;" />
+                </div>
+                <div class="separator"></div>
+                <p>RNGMAX is a bot that can do many things related to random numbers including a coin flip, 8-ball, and rolling dice! It has plenty of random number generation commands to spice up your Discord Server for free (of course)! To check the command list at any time, run <code>/help</code> as there are often new commands. If you want a new command added, type <code>/suggestion &lt;command idea&gt;</code> and it is likely that suggestion will be added to RNGMAX<br><br>Privacy Policy:<br>RNGMAX stores no data from members, users, or owners that is not necessary. Necessary data includes: the guild id* for storing /server-settings (only if applicable) and the user id* for storing /user-settings (only if applicable). It also stores the last command ran (across the entire bot) for bug finding and the amount of a specific command  ran for statistics (neither of these contain even a user id of who ran the command). The bot does not store or log anything else and all data is privately stored besides the top command bot-wide for the bot's status.<br><br>* Guild IDs are a public identifier for Discord Servers and is public to all users in a server<br>* User IDs are a public identifier for any Discord User and can be viewed by anyone across Discord</p>
+                <a href="https://discord.com/application-directory/1255783245337853983" target="_blank">Add RNGMAX!</a>
+                <a href="https://top.gg/bot/1255783245337853983/vote" target="_blank">Vote for the bot on top.gg!</a>
+            </section>
+            <section id="bot2">
+                <div class="title-bar">
+                    <h1>Ruby</h1>
+                    <img src="ruby.png" alt="Ruby's Icon" style="margin-left: 10px;" />
+                </div>
+                <div class="separator"></div>
+                <p>Ruby is a bot focused around using Discord's built-in features instead of adding excessive commands. It allows for logging and DMing users when they are punished via Discord's built in timeouts, kicks, bans, etc. It only requires audit log permissions to view information on who punished the user.<br><br>Privacy Policy:<br>Ruby stores all log messages from your server along with the following information: your server id (public id/identifier for your server), the user id (public id/identifier for any discord user), and the exact timestamp of the action. These logs can be cleared by using the command <code>/clearlogs &lt;user&gt;</code> or by kicking Ruby from your server and will not be able to be recovered. These logs are nessecary and are not shared with anyone besides you and anyone with Timeout Members permissions on your server running the <code>/logs &lt;user&gt;</code> command.</p>
+                <a href="https://discord.com/application-directory/1260853476947398696" target="_blank">Add Ruby!</a>
+            </section>
+            <section id="bot3">
+                <div class="title-bar">
+                    <h1>Invite Cleaner</h1>
+                    <img src="cleaner.png" alt="Invite Cleaner's Icon" style="margin-left: 10px;" />
+                </div>
+                <div class="separator"></div>
+                <p>Invite Cleaner is a very simple bot that automatically clears old invites to your Discord Server (as there is a limit). You can set it up with the command <code>/autodelete &lt;date&gt;</code> where the date is how many days an invite can stay before being deleted. From there, you can sit back as any old discord invites are removed!<br><br>Privacy Policy:<br>Invite Cleaner has absolutely no reason to store any data and therefore doesn't. The only thing that is saved is your public Guild Identifier and the date you set via <code>/autodelete &lt;date&gt;</code>.</p>
+                <a href="https://discord.com/application-directory/1261142222120681593">Add Invite Cleaner</a>
+            </section>
+            <section id="bot4">
+                <div class="title-bar">
+                    <h1>Let Me Google That</h1>
+                    <img src="lmgt.png" alt="Let Me Google That's Icon" style="margin-left: 10px;" />
+                </div>
+                <div class="separator"></div>
+                <p>Let Me Google That is a fun bot that you can add to your own profile or to servers. It's perfect for any cases where someone just wont Google something themselves and decides to bother YOU instead of searching it online. It's seperate from the site and just links the site in the bot's reply (it's an unofficial bot)<br><br>Privacy Policy:<br>Let Me Google That stores nothing at all as there's absolutely no reason to.</p>
+                <a href="https://discord.com/application-directory/1263325232522072094" target="_blank">Add Let Me Google That</a>
+            </section>
+        </div>
+        <div class="sidebar">
+            <button class="button active" title="About Me 👋" id="0" onclick="scrollToSection(0)"></button>
+            <button class="button" title="RNGMAX 🎲" id="1" onclick="scrollToSection(1)"></button>
+            <button class="button" title="Ruby 🔶" id="2" onclick="scrollToSection(2)"></button>
+            <button class="button" title="Invite Cleaner 🧹" id="3" onclick="scrollToSection(3)"></button>
+            <button class="button" title="Let Me Google That 😎" id="4" onclick="scrollToSection(4)"></button>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const sections = document.querySelectorAll('section');
+        const content = document.getElementById('content');
+        const scrollDelay = 700;
+        let isScrolling = false;
+
+        function scrollToSection(index) {
+            if (isScrolling || index < 0 || index >= sections.length) return;
+            isScrolling = true;
+            document.getElementById(currentIndex).classList.remove("active");
+            document.getElementById(index).classList.add("active");
+            currentIndex = index;
+            const translateY = -currentIndex * 100;
+            content.style.transform = `translateY(${translateY}vh)`;
+            setTimeout(() => {
+                isScrolling = false;
+            }, scrollDelay);
+        }
+
+        document.body.addEventListener('wheel', function(e) {
+            if (isScrolling) return;
+            
+            if (e.deltaY > 0 && currentIndex < sections.length - 1) {
+                scrollToSection(currentIndex + 1);
+            } else if (e.deltaY < 0 && currentIndex > 0) {
+                scrollToSection(currentIndex - 1);
+            }
+            e.preventDefault();
+        });
+        setTimeout(() => {
+            document.getElementById("about").scrollIntoView();
+            if (window.location.hash != "") {
+                const index = [ "about", "rngmax", "ruby", "invite-cleaner", "lmgt" ].indexOf(window.location.hash.substring(1));
+                if (index != -1) {
+                    scrollToSection(index);
+                }
+            }
+        }, 201);
+    </script>
+</body>
+</html>
