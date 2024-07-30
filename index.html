@@ -137,6 +137,15 @@
                 <p>Let Me Google That is a fun bot that you can add to your own profile or to servers. It's perfect for any cases where someone just wont Google something themselves and decides to bother YOU instead of searching it online. It's seperate from the site and just links the site in the bot's reply (it's an unofficial bot)<br><br>Privacy Policy:<br>Let Me Google That stores nothing at all as there's absolutely no reason to.</p>
                 <a href="https://discord.com/application-directory/1263325232522072094" target="_blank">Add Let Me Google That</a>
             </section>
+            <section id="bot5">
+                <div class="title-bar">
+                    <h1>Discophone</h1>
+                    <img src="discophone.png" alt="Discophone's Icon" style="margin-left: 10px;" />
+                </div>
+                <div class="separator"></div>
+                <p>Discophone is a very basic bot to echo your messages back to you via a / command<br><br>Privacy Policy:<br>Discophone stores no data on anyone and just echos your messages.</p>
+                <a href="https://discord.com/application-directory/1267691796956188706" target="_blank">Add Discophone</a>
+            </section>
         </div>
         <div class="sidebar">
             <button class="button active" title="About Me 👋" id="0" onclick="scrollToSection(0)"></button>
@@ -144,6 +153,7 @@
             <button class="button" title="Ruby 🔶" id="2" onclick="scrollToSection(2)"></button>
             <button class="button" title="Invite Cleaner 🧹" id="3" onclick="scrollToSection(3)"></button>
             <button class="button" title="Let Me Google That 😎" id="4" onclick="scrollToSection(4)"></button>
+            <button class="button" title="Discophone 💬" id="5" onclick="scrollToSection(5)"></button>
         </div>
     </div>
 
@@ -180,7 +190,7 @@
         setTimeout(() => {
             document.getElementById("about").scrollIntoView();
             if (window.location.hash != "") {
-                const index = [ "about", "rngmax", "ruby", "invite-cleaner", "lmgt" ].indexOf(window.location.hash.substring(1));
+                const index = [ "about", "rngmax", "ruby", "invite-cleaner", "lmgt", "discophone" ].indexOf(window.location.hash.substring(1));
                 if (index != -1) {
                     scrollToSection(index);
                 }
