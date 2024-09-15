@@ -146,6 +146,15 @@
                 <p>Discophone is a very basic bot to echo your messages back to you via a / command in a fancy little embed 🍷!<br><br>Privacy Policy:<br>Discophone stores no data on anyone and just echos your messages.</p>
                 <a href="https://discord.com/application-directory/1267691796956188706" target="_blank">Add Discophone</a>
             </section>
+            <section id="bot6">
+                <div class="title-bar">
+                    <h1>MeowTiers</h1>
+                    <img src="meowtiers.png" alt="MeowTiers's Icon" style="margin-left: 10px;" />
+                </div>
+                <div class="separator"></div>
+                <p>MeowTiers is a useful bot that adds a /tier command to check any player's tier by IGN<br><br>Privacy Policy:<br>MeowTiers stores absolutely zero data.</p>
+                <a href="https://discord.com/application-directory/1284552366741258415" target="_blank">Add MeowTiers</a>
+            </section>
         </div>
         <div class="sidebar">
             <button class="button active" title="About Me 👋" id="0" onclick="scrollToSection(0)"></button>
@@ -154,6 +163,7 @@
             <button class="button" title="Invite Cleaner 🧹" id="3" onclick="scrollToSection(3)"></button>
             <button class="button" title="Let Me Google That 😎" id="4" onclick="scrollToSection(4)"></button>
             <button class="button" title="Discophone 💬" id="5" onclick="scrollToSection(5)"></button>
+            <button class="button" title="MeowTiers 🐈" id="6" onclick="scrollToSection(6)"></button>
         </div>
     </div>
 
@@ -190,7 +200,7 @@
         setTimeout(() => {
             document.getElementById("about").scrollIntoView();
             if (window.location.hash != "") {
-                const index = [ "about", "rngmax", "ruby", "invite-cleaner", "lmgt", "discophone" ].indexOf(window.location.hash.substring(1));
+                const index = [ "about", "rngmax", "ruby", "invite-cleaner", "lmgt", "discophone", "meowtiers" ].indexOf(window.location.hash.substring(1));
                 if (index != -1) {
                     scrollToSection(index);
                 }
