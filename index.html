@@ -155,6 +155,15 @@
                 <p>MeowTiers is a useful bot that adds a /tier command to check any player's tier by IGN<br><br>Privacy Policy:<br>MeowTiers stores absolutely zero data.</p>
                 <a href="https://discord.com/application-directory/1284552366741258415" target="_blank">Add MeowTiers</a>
             </section>
+            <section id="bot7">
+                <div class="title-bar">
+                    <h1>Tiers</h1>
+                    <img src="tiers.png" alt="Tiers's Icon" style="margin-left: 10px;" />
+                </div>
+                <div class="separator"></div>
+                <p>Tiers is an Advanced Minecraft Tier List Management & Queues<br>While this is a paid bot, it is very powerful and only 1.99$/mo<br><br>Terms of Service:<br>Please use the assigned close buttons to close tickets.<br>Please make sure Tiers has the right permissions, it needs to have Manage Chanels on the testing category, Embed Links, Attach Files, Send Messages (everywhere and in queue & waitlist channel), Mention Everyone (to ping waitlist for queues), Manage Roles, Add Reactions<br><br><br>Privacy Policy:<br>Tiers will save when your trial is going to end, configuration (texts and config) you upload, cooldowns for members testing, and information about open ticket channels.</p>
+                <a href="https://discord.com/application-directory/1284552366741258415" target="_blank">Add MeowTiers</a>
+            </section>
         </div>
         <div class="sidebar">
             <button class="button active" title="About Me 👋" id="0" onclick="scrollToSection(0)"></button>
@@ -164,6 +173,7 @@
             <button class="button" title="Let Me Google That 😎" id="4" onclick="scrollToSection(4)"></button>
             <button class="button" title="Discophone 💬" id="5" onclick="scrollToSection(5)"></button>
             <button class="button" title="MeowTiers 🐈" id="6" onclick="scrollToSection(6)"></button>
+            <button class="button" title="Tiers 👑" id="7" onclick="scrollToSection(7)"></button>
         </div>
     </div>
 
@@ -200,7 +210,7 @@
         setTimeout(() => {
             document.getElementById("about").scrollIntoView();
             if (window.location.hash != "") {
-                const index = [ "about", "rngmax", "ruby", "invite-cleaner", "lmgt", "discophone", "meowtiers" ].indexOf(window.location.hash.substring(1));
+                const index = [ "about", "rngmax", "ruby", "invite-cleaner", "lmgt", "discophone", "meowtiers", "tiers" ].indexOf(window.location.hash.substring(1));
                 if (index != -1) {
                     scrollToSection(index);
                 }
